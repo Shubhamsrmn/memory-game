@@ -1,0 +1,8 @@
+<div class="grid grid-cols-4 gap-4">
+  @for(el of board; track el.id){
+  <app-game-board-card
+    [boardEl]="el"
+    (onFlipping)="onClickFlipping(el.id)"
+  ></app-game-board-card
+  >}
+</div>

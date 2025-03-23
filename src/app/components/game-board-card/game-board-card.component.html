@@ -1,0 +1,11 @@
+<div class="cursor-pointer" (click)="onCardClick()">
+  @if (boardEl.isFlipped) {
+  <img
+    [src]="boardEl.image"
+    [alt]="boardEl.image"
+    class="w-[9.2rem] h-[9.2rem] rounded-[0.6rem]"
+  />
+  } @else {
+  <div class="w-[9.2rem] h-[9.2rem] bg-amber-300 rounded-[0.6rem]"></div>
+  }
+</div>
